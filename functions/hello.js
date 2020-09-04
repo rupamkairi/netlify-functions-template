@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 exports.handler = async (event, context) => {
   try {
@@ -7,9 +9,9 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({
         message: `Hello, ${subject}.`,
         secrets: {
-          client_id: process.environment.CLIENT_ID,
-          client_secret: process.environment.CLIENT_SECRET
-        }
+          client_id: process.env.CLIENT_ID,
+          client_secret: process.env.CLIENT_SECRET,
+        },
       }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },

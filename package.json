@@ -1,0 +1,24 @@
+{
+  "name": "netlify-functions-template",
+  "version": "1.0.0",
+  "description": "Simple Server-Side functionalities can be used on a front-end Web Application using [Netlify Functions](https://docs.netlify.com/functions/configure-and-deploy/#configure-the-functions-folder). This way of adding server-side processes known as Server-less lambda functions.",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "netlify dev",
+    "deploy": "netlify deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupamkairi/netlify-functions-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupamkairi/netlify-functions-template/issues"
+  },
+  "homepage": "https://github.com/rupamkairi/netlify-functions-template#readme"
+}

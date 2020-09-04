@@ -1,6 +1,7 @@
 [build]
 	functions= "functions/"
 	publish="public/"
-[context.production.environment]
-	CLIENT_ID="CLIENT_ID"
-	CLIENT_SECRET="CLIENT_SECRET"
+[[redirects]]
+	from = "/api/*"
+	to = "/.netlify/functions/:splat"
+	status = 200
